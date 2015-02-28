@@ -274,6 +274,14 @@ $WORDPRESS_SOCIAL_LOGIN_PROVIDERS_CONFIG = ARRAY(
 
 		"cat"               => "misc",
 	),
+	ARRAY(
+		"provider_id"       => "Edmodo",
+		"provider_name"     => "Edmodo",
+		"new_app_link"      => "https://developers.edmodo.com/edmodo-connect/edmodo-connect-overview-getting-started/",
+
+		"cat"               => "misc",
+	),
+
 );
 
 // --------------------------------------------------------------------
