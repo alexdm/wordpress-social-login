@@ -12,8 +12,8 @@
  */
 class Hybrid_Providers_Edmodo extends Hybrid_Provider_Model_OAuth2
 { 
-	// default permissions
-	public $scope = "read_user_email";
+	// default permissions 
+	public $scope = "basic read_groups read_connections read_user_email create_messages";
 
 	/**
 	 * ID wrappers initializer

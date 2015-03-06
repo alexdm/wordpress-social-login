@@ -906,6 +906,12 @@ function wsl_process_login_build_provider_config( $provider )
 		$config["providers"][$provider]["endpoint"] = WORDPRESS_SOCIAL_LOGIN_HYBRIDAUTH_ENDPOINT_URL . 'endpoints/' . strtolower( $provider ) . '.php';
 	}
 
+	// set custom endpoint?
+	if( in_array( strtolower( $provider ), array( 'edmodo' ) ) )
+	{
+		$config["providers"][$provider]["endpoint"] = WORDPRESS_SOCIAL_LOGIN_HYBRIDAUTH_ENDPOINT_URL . 'endpoints/' . strtolower( $provider ) . '.php';
+	}
+
 	// set default scope
 	if( get_option( 'wsl_settings_' . $provider . '_app_scope' ) )
 	{
